@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    我是根组件
     <HelloWorld />
   </div>
 </template>
