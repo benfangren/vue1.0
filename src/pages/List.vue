@@ -1,13 +1,28 @@
 <template>
-  <div class="">list</div>
+  <div class="ds">
+    list
+    <Btn edit="1212" :msg="abc" :arr="arr">
+      <h1>我是标签插槽</h1>
+    </Btn>
+    <Btn edit="1212" :msg="abc" :arr="arr">
+      <h1>我是标签插槽</h1>
+    </Btn>
+    <Btn edit="1212" :msg="abc" :arr="arr">
+      <h1>我是标签插槽</h1>
+    </Btn>
+  </div>
 </template>
 
 <script>
 // import axios from "axios";
+import Btn from "./components/Page.vue";
 export default {
-  components: {},
+  components: { Btn },
   data() {
-    return {};
+    return {
+      abc: "我是list页面",
+      arr: [1, 2, 3, 4, 5, 6, 7, 8, 988],
+    };
   },
   computed: {},
   watch: {},
@@ -21,4 +36,9 @@ export default {
   updated() {},
 };
 </script>
-<style scoped></style>
+<style scoped>
+.ds {
+  display: flex;
+  justify-content: space-between;
+}
+</style>

@@ -1,7 +1,7 @@
 <template>
-  <div class="">
+  <div class="box">
     <h1>封装组件练习</h1>
-    <div class="box">
+    <div>
       <p>{{ msg }}</p>
       <button>{{ edit }}</button>
       <button>{{ ccc }}</button>
@@ -11,7 +11,7 @@
       <div>
         <slot></slot>
       </div>
-      <div>上面的是插槽，我是子元素。</div>
+      <div></div>
     </div>
   </div>
 </template>
@@ -37,4 +37,10 @@ export default {
   updated() {},
 };
 </script>
-<style lang="less" scoped></style>
+<style lang="less" scoped>
+.box {
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+</style>
