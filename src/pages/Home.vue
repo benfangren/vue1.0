@@ -1,10 +1,14 @@
 <template>
-  <div class="">home</div>
+  <div class="">
+    home
+    <HelloWorld />
+  </div>
 </template>
 
 <script>
+import HelloWorld from "../components/HelloWorld.vue";
 export default {
-  components: {},
+  components: { HelloWorld },
   data() {
     return {};
   },

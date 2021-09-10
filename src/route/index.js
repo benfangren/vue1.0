@@ -9,7 +9,7 @@ const router = new VueRouter({
 	routes: [
 		{
 			path: '/',
-			component: Home,
+			component: Page,
 		},
 		{
 			path: '/biaodan',
@@ -21,7 +21,7 @@ const router = new VueRouter({
 		},
 		{
 			path: '/page',
-			component: Page,
+			component: Home,
 		},
 	]
 });

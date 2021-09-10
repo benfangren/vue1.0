@@ -1,5 +1,7 @@
 <template>
-  <div class="">yemian</div>
+  <div class="">
+    <h1>封装组件练习</h1>
+  </div>
 </template>
 
 <script>
