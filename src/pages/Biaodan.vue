@@ -5,6 +5,8 @@
         我是aixo发送回来的数据{{ item.pid }}
       </li>
     </ul>
+
+    <p>父子组件传参练习</p>
   </div>
 </template>
 
