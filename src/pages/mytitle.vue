@@ -6,7 +6,13 @@
       <input type="text" v-model="name" />
       <button @click="btn">发送参数</button>
     </form>
-    <Data :text="password" :text2="name" @btn2="name3"></Data>
+    <Data
+      :text="password"
+      :text2="name"
+      @btn2="name3"
+      ref="refs"
+      :flag="flag"
+    ></Data>
     <div>1213</div>
     <div class="box11212">
       <div class="box">
@@ -29,6 +35,7 @@ export default {
       name2: "",
       password: "",
       name: "",
+      flag: false,
     };
   },
   computed: {},
@@ -37,6 +44,9 @@ export default {
   methods: {
     btn() {
       console.log(this.password, this.name);
+      //   this.$refs.refs.xianshi();
+      this.flag = true;
+      console.log(this.flag);
     },
     name3(val, val2) {
       console.log(val, val2);
