@@ -4,7 +4,13 @@
       <div>父子组件传参</div>
       <input type="text" v-model="password" />
       <input type="text" v-model="name" />
+      <br />
+
+      <hr />
+      <h1>上传</h1>
+      <input type="file" />
       <button @click="btn">发送参数</button>
+      <input type="submit" name="上传" />
     </form>
     <Data
       :text="password"
