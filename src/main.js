@@ -4,9 +4,6 @@ import 'element-ui/lib/theme-chalk/index.css';
 import App from './App.vue'
 import router from './route'
 Vue.use(ElementUI);
-
-
-
 new Vue({
   router,
   render: h => h(App),
