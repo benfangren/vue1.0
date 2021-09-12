@@ -11,7 +11,6 @@
 </template>
 
 <script>
-import axios from "axios";
 export default {
   components: {},
   data() {
@@ -24,9 +23,10 @@ export default {
 
   methods: {
     async getgooss() {
-      const { data } = await axios.get(
+      const { data } = await this.axios.get(
         `http://jx.xuzhixiang.top/ap/api/productlist.php`
       );
+
       console.log(data.data);
       this.data = data.data;
     },
