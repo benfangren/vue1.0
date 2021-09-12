@@ -1,0 +1,25 @@
+diff a/src/pages/1111111111.vue b/src/pages/1111111111.vue	(rejected hunks)
+@@ -0,0 +1,23 @@
++<template>
++  <div class=""></div>
++</template>
++
++<script>
++export default {
++  components: {},
++  data() {
++    return {};
++  },
++  computed: {},
++  watch: {},
++
++  methods: {},
++  created() {},
++  mounted() {},
++  beforeCreate() {},
++  beforeMount() {},
++  beforeUpdate() {},
++  updated() {},
++};
++</script>
++<style scoped></style>
