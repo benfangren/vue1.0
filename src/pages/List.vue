@@ -8,7 +8,7 @@
       <h1>我是标签插槽</h1>
     </Btn>
     <Btn edit="1212" :msg="abc" :arr="arr">
-      <h1>我是标签插槽</h1>
+      <h1>我是标签插槽11</h1>
     </Btn>
   </div>
 </template>
