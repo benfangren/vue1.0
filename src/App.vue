@@ -4,8 +4,6 @@
     <router-link to="/page">page</router-link>
     <router-link to="/list">list</router-link>
     <router-link to="/biaodan">biaodan</router-link>
-    <router-link to="/mytitle">mytitle</router-link>
-    <router-link to="/qqq">qqq</router-link>
     <router-view></router-view>
   </div>
 </template>
@@ -19,12 +17,6 @@ export default {
 
 <style>
 a {
-  display: inline-block;
-  width: 110px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  margin: 0 100px;
-  background: red;
+  margin: 100px;
 }
 </style>

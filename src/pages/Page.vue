@@ -1,7 +1,7 @@
 <template>
-  <div class="box">
+  <div class="">
     <h1>封装组件练习</h1>
-    <div>
+    <div class="box">
       <p>{{ msg }}</p>
       <button>{{ edit }}</button>
       <button>{{ ccc }}</button>
@@ -11,7 +11,7 @@
       <div>
         <slot></slot>
       </div>
-      <div></div>
+      <div>上面的是插槽，我是子元素。</div>
     </div>
   </div>
 </template>
@@ -20,7 +20,6 @@
 export default {
   components: {},
   props: ["msg", "edit", "arr"],
-
   data() {
     return {
       ccc: "我是ccc",
@@ -38,10 +37,4 @@ export default {
   updated() {},
 };
 </script>
-<style lang="less" scoped>
-.box {
-  width: 100px;
-  height: 100px;
-  background: red;
-}
-</style>
+<style lang="less" scoped></style>
