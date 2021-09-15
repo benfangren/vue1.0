@@ -1,14 +1,14 @@
 <template>
   <div class="">
-    今天周日，明天周一，好好学习git和git可视化工具。
-    明天的天气非常好，是下雨天，但是我很喜欢。。哈啊哈哈哈哈哈123
-    匿名插槽，具名插槽。。。。。
+    我是主页，下面是hellword组件区域
+    <HelloWorld />
   </div>
 </template>
 
 <script>
+import HelloWorld from "../../components/HelloWorld.vue";
 export default {
-  components: {},
+  components: { HelloWorld },
   data() {
     return {};
   },
