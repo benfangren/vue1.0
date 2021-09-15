@@ -1,9 +1,9 @@
 <template>
   <div class="">
-    <div>我是表单页</div>
+    <div>我是表单页1</div>
     <ul>
       <li v-for="item in data" :key="item.pid">
-        我是aixo发送回来的数据{{ item.pid }}
+        我是aixo发送回来的数 dsff 据{{ item.pid }}
       </li>
     </ul>
 

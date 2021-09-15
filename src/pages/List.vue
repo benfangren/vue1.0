@@ -1,6 +1,6 @@
 <template>
   <div class="ds">
-    <div>我是列表页</div>
+    list
     <Btn edit="1212" :msg="abc" :arr="arr">
       <h1>我是标签插槽</h1>
     </Btn>
@@ -8,7 +8,7 @@
       <h1>我是标签插槽</h1>
     </Btn>
     <Btn edit="1212" :msg="abc" :arr="arr">
-      <h1>我是标签插槽11</h1>
+      <h1>我是标签插槽11111</h1>
     </Btn>
   </div>
 </template>
