@@ -1,5 +1,6 @@
 <template>
   <div class="">
+    <div>我的标题页</div>
     <form action="">
       <div>父子组件传参</div>
       <input type="text" v-model="password" />

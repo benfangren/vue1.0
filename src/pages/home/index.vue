@@ -1,12 +1,12 @@
 <template>
   <div class="">
-    home
+    我是主页，下面是hellword组件区域
     <HelloWorld />
   </div>
 </template>
 
 <script>
-import HelloWorld from "../components/HelloWorld.vue";
+import HelloWorld from "../../components/HelloWorld.vue";
 export default {
   components: { HelloWorld },
   data() {

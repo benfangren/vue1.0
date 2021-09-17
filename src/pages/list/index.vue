@@ -1,6 +1,6 @@
 <template>
   <div class="ds">
-    list
+    <div>我是列表页</div>
     <Btn edit="1212" :msg="abc" :arr="arr">
       <h1>我是标签插槽</h1>
     </Btn>
