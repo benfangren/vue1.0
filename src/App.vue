@@ -6,6 +6,8 @@
     <router-link to="/biaodan">biaodan</router-link>
     <router-link to="/mytitle">mytitle</router-link>
     <router-link to="/qqq">qqq</router-link>
+    <hr />
+    <hr />
     <router-view></router-view>
   </div>
 </template>
@@ -20,7 +22,7 @@ export default {
 <style>
 a {
   display: inline-block;
-  width: 110px;
+  width: 90px;
   height: 50px;
   line-height: 50px;
   text-align: center;

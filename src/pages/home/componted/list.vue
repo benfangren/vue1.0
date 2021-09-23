@@ -1,18 +1,26 @@
 <template>
-  <div class="">
-    <List :list="list"></List>
+  <div class="my-list">
+    <ul :v-for="item in list">
+      <li></li>
+    </ul>
+    <button>添加</button>
   </div>
 </template>
 
 <script>
-import List from "./componted/list.vue";
 export default {
-  components: { List },
-
+  name: "my-list",
+  components: {},
+  props: {
+    list: {
+      type: Array,
+      default: () => {
+        return [];
+      },
+    },
+  },
   data() {
-    return {
-      list: ["杨利强", "梦依兰"],
-    };
+    return {};
   },
   computed: {},
   watch: {},
