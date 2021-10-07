@@ -14,29 +14,29 @@ const getters = {
 	}
 }
 const mutations = {
-		show(state) {
-			state.showFooter = true;
-		},
-		hide(state) {
-			state.showFooter = false;
-		},
-		newNum(state, sum) {
-			state.changeNum += sum;
-
-		}
+	show(state) {
+		state.showFooter = true;
 	},
-	const actions = {
-		hideFooter(context) {
-			context.commit("hide")
-		},
-		showFooter(context) {
-			context.commit("show")
-		},
-		getnewNum(context, num) {
-			context.commit('newNum', num)
-		}
+	hide(state) {
+		state.showFooter = false;
+	},
+	newNum(state, sum) {
+		state.changeNum += sum;
+
 	}
-const store = new Vuex.store({
+};
+const actions = {
+	hideFooter(context) {
+		context.commit("hide")
+	},
+	showFooter(context) {
+		context.commit("show")
+	},
+	getnewNum(context, num) {
+		context.commit('newNum', num)
+	}
+}
+const store = new Vuex.Store({
 	state,
 	getters,
 	mutations,
