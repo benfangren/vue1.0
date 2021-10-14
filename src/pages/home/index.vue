@@ -61,12 +61,17 @@
                 <el-table-column fixed="right" label="操作" width="100">
                   <template slot-scope="scope">
                     <el-button
-                      @click="handleClick(scope.row)"
+                      @click="handleClick(scope)"
                       type="text"
                       size="small"
                       >查看</el-button
                     >
-                    <el-button type="text" size="small">编辑</el-button>
+                    <el-button
+                      type="text"
+                      size="small"
+                      @click="editleClick(scope.row)"
+                      >编辑</el-button
+                    >
                   </template>
                 </el-table-column>
               </el-table>
@@ -116,6 +121,20 @@ export default {
   methods: {
     load() {
       this.count += 2;
+    },
+    handleClick(row) {
+      console.log("查看", row);
+      this.$router.push({
+        path: "../qqq",
+        query: { type: "edit" },
+      });
+    },
+    editleClick(row) {
+      console.log("编辑", row);
+      this.$router.push({
+        path: "../qqq",
+        query: { type: "look" },
+      });
     },
   },
   created() {},
